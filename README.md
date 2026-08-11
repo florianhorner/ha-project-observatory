@@ -1,38 +1,49 @@
 # HA Project Observatory
 
-An interactive data story about what people launched in the Home Assistant
-Community's “Share your Projects” forum.
+<a href="https://florianhorner.github.io/ha-project-observatory/">
+  <img src="docs/readme-hero.png" alt="HA Project Observatory: 1 of 20 sampled launches in 2025 and 9 of 33 in 2026 built mainly on Home Assistant itself">
+</a>
 
-**Read the article:**
-[florianhorner.github.io/ha-project-observatory](https://florianhorner.github.io/ha-project-observatory/)
+[Read the interactive article](https://florianhorner.github.io/ha-project-observatory/)
+and explore all 53 classified launches.
 
-## The finding
+I reviewed two Q1 samples from the Home Assistant Community's
+"Share your Projects" forum. In the 2025 sample, 1 of 20 classified integration
+launches built mainly on Home Assistant itself. In 2026, 9 of 33 did.
 
-In two Q1 forum samples, projects built mainly on Home Assistant rose from one
-of 20 classified integration launches in 2025 to nine of 33 in 2026.
+This is a working finding, not a census. The 2025 baseline is one project, and I
+classified the posts without a second reviewer. Changes in forum traffic or
+posting habits may explain part of the difference. The article publishes the
+records and source links so other people can inspect the result.
 
-That result is suggestive, not an ecosystem census. The 2025 baseline is one
-project, the study has one reviewer, and the observed forum change may partly
-reflect traffic, category use or posting culture.
+I started with a different question: had AI coding tools caused a surge in new
+projects? Most forum posts do not say how their code was made, so this dataset
+cannot answer that. I could classify what the projects did, which is where the
+1 of 20 and 9 of 33 comparison came from.
 
-The original question was whether AI coding tools had triggered a surge. The
-public posts do not disclose enough about how most projects were made to test
-that theory reliably.
+## Evidence files
 
-## Evidence package
+- [`data/visualization-data.json`](data/visualization-data.json) is the frozen
+  publication dataset. It contains 53 classified integration launches and 200
+  sampled forum topics.
+- [`data/README.md`](data/README.md) describes the fields, weights and limits.
+- [`data/SHA256SUMS`](data/SHA256SUMS) records the dataset checksum.
 
-- `data/visualization-data.json` contains the frozen publication dataset.
-- It includes 53 classified integration launches and 200 sampled forum topics.
-- Every displayed project links back to its Home Assistant Community source.
-- Weighted estimates and raw sample counts are labelled separately in the
-  article.
-
-The article records what projects claimed at launch. It does not measure
+Every project shown in the article links to its Home Assistant Community topic.
+The study records what each project claimed at launch. It does not measure
 installs, reliability, maintenance or survival.
+
+To verify the frozen dataset:
+
+```bash
+cd data
+shasum -a 256 -c SHA256SUMS
+```
 
 ## Read locally
 
-The published site is static HTML, CSS and JavaScript. No build step is needed.
+This repository is the publication package: a prebuilt static site plus the
+frozen data. No build step is needed to read it.
 
 ```bash
 git clone https://github.com/florianhorner/ha-project-observatory.git
@@ -46,16 +57,17 @@ Then open <http://localhost:8000/>.
 
 Classification challenges and factual corrections are welcome through
 [GitHub issues](https://github.com/florianhorner/ha-project-observatory/issues).
-Please name the affected topic and explain what you would classify differently.
+Please include the forum topic, the current classification, your proposed
+change and the reason for it.
 
-## Impact measurement
+## Impact
 
-GitHub stars, forks and issues measure evidence reuse, not article readership.
-Channel-specific campaign links can preserve attribution, but this publication
-does not currently include visitor analytics or interaction tracking.
+The site does not run visitor analytics. GitHub stars, forks and issues can show
+whether people inspect or reuse the evidence; they do not measure readership.
 
-## Publishing model
+## How the site is published
 
-The repository mirrors the Smart Home Gazette setup: GitHub Pages serves the
-prebuilt files from the root of `main`. The `.nojekyll` marker keeps the assets
-untouched.
+GitHub Pages serves the prebuilt files from the root of `main`. The `.nojekyll`
+file tells Pages to leave the asset paths alone. I used the same small static
+setup for [The Smart Home Gazette](https://florianhorner.github.io/smart-home-gazette/);
+its [source is also on GitHub](https://github.com/florianhorner/smart-home-gazette).
