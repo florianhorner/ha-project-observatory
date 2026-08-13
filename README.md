@@ -7,6 +7,8 @@
 [Read the interactive article](https://florianhorner.github.io/ha-project-observatory/)
 and explore all 53 classified launches.
 
+Current release: [v1.0.0](https://github.com/florianhorner/ha-project-observatory/releases/latest)
+
 I reviewed two Q1 samples from the Home Assistant Community's
 "Share your Projects" forum. In the 2025 sample, 1 of 20 classified integration
 launches built mainly on Home Assistant itself. In 2026, 9 of 33 did.
