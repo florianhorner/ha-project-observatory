@@ -7,7 +7,14 @@
 [Read the interactive article](https://florianhorner.github.io/ha-project-observatory/)
 and explore all 53 classified launches.
 
-Current release: [v1.0.0](https://github.com/florianhorner/ha-project-observatory/releases/latest)
+Current release: [v1.1.0](https://github.com/florianhorner/ha-project-observatory/releases/tag/v1.1.0)
+
+No product, no newsletter, no service. I read the projects because I enjoyed
+them, built the explainer to see the shape of it, and published both.
+
+The [Home Assistant community thread](https://community.home-assistant.io/t/are-home-assistant-projects-shifting-from-connecting-things-to-extending-home-assistant-itself-data-a-clicky-clicky-explainer-inside/1021079)
+shaped v1.1. @RedKing and @stevemann challenged the purpose, definition,
+hardware scope and AI-disclosure limit.
 
 I reviewed two Q1 samples from the Home Assistant Community's
 "Share your Projects" forum. In the 2025 sample, 1 of 20 classified integration
@@ -30,6 +37,9 @@ cannot answer that. I could classify what the projects did, which is where the
   sampled forum topics.
 - [`data/README.md`](data/README.md) describes the fields, weights and limits.
 - [`data/SHA256SUMS`](data/SHA256SUMS) records the dataset checksum.
+- [`research/ha-project-launch-scout/README.md`](research/ha-project-launch-scout/README.md)
+  opens the recovered 200-topic audit ledger, sampling design, codebook and
+  recovery limits used behind the publication dataset.
 
 Every project shown in the article links to its Home Assistant Community topic.
 The study records what each project claimed at launch. It does not measure

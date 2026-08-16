@@ -34,8 +34,9 @@ retaining the recovered `manual-review.json`.
 - The weighted integration inputs remain 84.82 for 2025 and 272.67 for 2026,
   before rounding to the published whole-number estimates.
 - The archive's generated-file checksums reproduce.
-- A public-repository credential scan found no secrets. Two numeric false
-  positives were reviewed: a sampling probability and the Wilson-interval
+- A public-repository credential scan found no secrets. Three medium findings
+  were reviewed as false positives: the documented localhost preview URL is not
+  private infrastructure, and a sampling probability plus the Wilson-interval
   constant are not payment-card data.
 
 ## Required caveats
