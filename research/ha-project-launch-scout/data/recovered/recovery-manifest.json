@@ -1,0 +1,30 @@
+{
+  "recovery_date": "2026-08-17",
+  "frozen_publication_sha256": "565257528fe0e541f84c547b05baf117e9adc95526aab696ca86e15c5494af10",
+  "records": {
+    "sample_topics": 200,
+    "manual_review_decisions": 124,
+    "integration_taxonomy_records": 53
+  },
+  "weighted_integration_estimates_before_whole_number_rounding": {
+    "2025": 84.82,
+    "2026": 272.67
+  },
+  "exactly_recovered": [
+    "Frozen final labels, titles, URLs and weights for 200 sampled topics",
+    "Manual-review decisions and notes for 124 topics",
+    "Domain, connection-surface and scope codes for 53 integrations",
+    "Sampling seed, strata, allocations and weighting formula"
+  ],
+  "not_recovered": [
+    "Original raw category-listing JSON files",
+    "Original opening-post JSON and HTML snapshots",
+    "Exact category IDs for rows whose published weight maps to more than one stratum",
+    "Generated intermediate CSV and summary files not embedded in the task transcript"
+  ],
+  "generated_files": {
+    "sample-audit-ledger.csv": "01119fc4648fbb7cf0b3bbff2781f2fb45b61c1787bb3b2a8c0b3b5e86715c0f",
+    "integration-taxonomy.csv": "c5d47c7d15a9cef10ec76c5ff76f2caa3e2554b0a9c5334107fa1992f709fec8",
+    "sampling-design.json": "088d73c634dddf02fb481be6193116395a522854f920444b9415c3ff8dc060f9"
+  }
+}

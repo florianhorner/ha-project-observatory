@@ -1,0 +1,94 @@
+{
+  "status": "exact_recovery_from_original_sampling_script",
+  "seed": 20260726,
+  "cohorts": {
+    "2025": {
+      "window": "2025-01-01 through 2025-03-31",
+      "population": 416,
+      "sample": 100,
+      "strata": {
+        "9": {
+          "category_name": "Share your Projects!",
+          "population": 208,
+          "sample": 50,
+          "inclusion_probability": 0.2403846153846154,
+          "sample_weight": 4.16
+        },
+        "47": {
+          "category_name": "Custom Integrations",
+          "population": 102,
+          "sample": 24,
+          "inclusion_probability": 0.23529411764705882,
+          "sample_weight": 4.25
+        },
+        "34": {
+          "category_name": "Dashboards & Frontend",
+          "population": 78,
+          "sample": 19,
+          "inclusion_probability": 0.24358974358974358,
+          "sample_weight": 4.105263157894737
+        },
+        "26": {
+          "category_name": "Scripts",
+          "population": 24,
+          "sample": 6,
+          "inclusion_probability": 0.25,
+          "sample_weight": 4.0
+        },
+        "29": {
+          "category_name": "Themes",
+          "population": 4,
+          "sample": 1,
+          "inclusion_probability": 0.25,
+          "sample_weight": 4.0
+        }
+      }
+    },
+    "2026": {
+      "window": "2026-01-01 through 2026-03-31",
+      "population": 835,
+      "sample": 100,
+      "strata": {
+        "9": {
+          "category_name": "Share your Projects!",
+          "population": 360,
+          "sample": 43,
+          "inclusion_probability": 0.11944444444444445,
+          "sample_weight": 8.372093023255815
+        },
+        "47": {
+          "category_name": "Custom Integrations",
+          "population": 355,
+          "sample": 43,
+          "inclusion_probability": 0.12112676056338029,
+          "sample_weight": 8.255813953488373
+        },
+        "34": {
+          "category_name": "Dashboards & Frontend",
+          "population": 106,
+          "sample": 13,
+          "inclusion_probability": 0.12264150943396226,
+          "sample_weight": 8.153846153846153
+        },
+        "26": {
+          "category_name": "Scripts",
+          "population": 10,
+          "sample": 1,
+          "inclusion_probability": 0.1,
+          "sample_weight": 10.0
+        },
+        "29": {
+          "category_name": "Themes",
+          "population": 4,
+          "sample": 0,
+          "inclusion_probability": 0.0,
+          "sample_weight": null
+        }
+      }
+    }
+  },
+  "allocation": "Proportional stratified sample with largest-remainder allocation",
+  "selection": "Within each category, sort by topic_id and sample with random.Random(seed + year * 1000 + category_id).",
+  "weight_formula": "stratum_population / stratum_sample",
+  "known_limit": "The four Q1 2026 Theme topics received an allocation of zero and therefore have zero inclusion probability in this sample."
+}
