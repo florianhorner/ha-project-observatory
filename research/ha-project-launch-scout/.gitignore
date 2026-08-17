@@ -1,0 +1,11 @@
+# Source material and generated working files that may contain complete forum
+# posts or author metadata. Keep these local; the public archive contains only
+# topic titles, URLs, codes, weights, and short review notes.
+data/census/
+data/raw/
+data/launch-validation/*
+!data/launch-validation/manual-review.json
+
+# Python runtime artifacts.
+__pycache__/
+*.py[cod]
